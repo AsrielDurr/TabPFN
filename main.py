@@ -8,17 +8,6 @@ from xgboost import XGBClassifier
 import time
 from config import OPENML_DATASETS
 
-import sys
-import torch
-import numpy
-import tabpfn
-
-print("Python:", sys.version)
-print("Torch:", torch.__version__)
-print("NumPy:", numpy.__version__)
-print("TabPFN:", tabpfn.__version__)
-
-
 results = []
 
 def load_openml_data(dataset_id):
@@ -70,3 +59,4 @@ df.to_csv("results/results.csv", index=False)
 
 print("\n🔥 ALL DONE — Results saved to results/results.csv")
 print(df)
+
