@@ -57,6 +57,7 @@ for did in OPENML_DATASETS:
 df = pd.DataFrame(results)
 df.to_csv("results/results.csv", index=False)
 
-print("\n🔥 ALL DONE — Results saved to results/results.csv")
+print("\n ALL DONE — Results saved to results/results.csv")
 print(df)
+
 
